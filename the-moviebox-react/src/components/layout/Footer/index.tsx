@@ -1,21 +1,23 @@
-import { Facebook, Instagram, Youtube} from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
+import { FooterLink } from "../../ui/footer-link";
 
 export function Footer() {
-return (
-      <footer>
-    <div className="container">
-      <p>The MovieBox 2025 - Todos os direitos são reservados</p>
-      <ul>
-        <li>
-          <a href="#">
-          <Facebook/>  
-          </a></li>
-        <li><a href="#">
-          <Instagram/></a></li>
-        <li><a href="#">
-          <Youtube/></a></li>
-      </ul>
-    </div>    
-  </footer>
-)
+  return (
+    <footer className="bg-[#1c1c1c] border-t border-[#333] p-12">
+      <div className="my-0 mx-auto max-w-6xl flex flex-col items-center">
+        <p className="text-[#a0a0a0] text-xs">The MovieBox 2025 - Todos os direitos são reservados</p>
+        <ul className="flex list-none mt-4 gap-3">
+          <li>
+            <FooterLink> <Facebook /></FooterLink>
+          </li>
+          <li>
+            <FooterLink> <Instagram /></FooterLink>
+          </li>
+          <li>
+            <FooterLink> <Youtube /></FooterLink>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  )
 }
