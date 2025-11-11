@@ -14,3 +14,4 @@ export const MovieService = {
     return result.data;
   },
 };
+

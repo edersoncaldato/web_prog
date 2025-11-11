@@ -8,7 +8,7 @@ const categories = [
 
 export function Navbar() {
   return (
-    <nav className="flex bg-[#1c1c1c] border-b border-b-[#333] max-w-6xl mx-auto">
+    <nav className="bg-[#1c1c1c] border-b border-[#333] mx-auto max-w-6xl">
       <ol className="flex gap-8 list-none py-6">
         {categories.map((c) => (
           <li>
@@ -16,8 +16,7 @@ export function Navbar() {
               href={c.link}
               className={`text-sm ${
                 c.active
-                  ? "text-[#e50914] border-b-2 border-[#e50914] hover:text-[#e50914]"
-                  : "text-[#ccc] hover:text-white"
+                  ? "text-[#e50914] hover:text-white active:text-[#e50914] border-b-2 border-[#e50914]" : "text-[#ccc] hover:text-white"
               } `}
             >
               {c.label}
