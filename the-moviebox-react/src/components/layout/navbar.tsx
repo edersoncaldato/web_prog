@@ -14,10 +14,9 @@ export function Navbar() {
           <li>
             <a
               href={c.link}
-              className={`text-sm ${
-                c.active
+              className={`text-sm ${c.active
                   ? "text-[#e50914] hover:text-white active:text-[#e50914] border-b-2 border-[#e50914]" : "text-[#ccc] hover:text-white"
-              } `}
+                } `}
             >
               {c.label}
             </a>
